@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    color: #505962;
+}
+
+
+/* Navigation */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand img {
+    height: 2.5rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #4979c7;
+}
+
+/* Landing Page */
+.home-inner {
+    background-image: url(../img/educamain.jpg);
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem #4979c7;
+    padding-bottom: .1rem;
+}
+
+.caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem #4979c7;
+    padding-bottom: .6rem;
+} 
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 3rem;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#course .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card { 
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #721bff,#4d84e2);
+    color: #fff;
+}
+
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-body .fa-suitcase {
+    height: 200px;
+    width: 180px;
+    color: #721bff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+#categories {
+    background-color: #c9c9c9b0;
+}
+
+#categories .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card-body-category{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+}
+
+.heading-underline {
+    width: 3.5rem;
+    height: .2rem;
+    background-color: #721bff;
+    margin: 0 auto 2rem;
+}
+
+.aboutnote{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.fixed {
+    background-image: url(img/contactbg.jpg);
+    z-index: -1;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+#contact .contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+#contact h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+#contact .contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #000000cc;
+    padding: 20px 40px;
+    outline: none;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+#contact .contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #721bff;
+}
+
+#contact textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+#contact .contact-form-btn {
+    float: right;
+    border: 0;
+    background: #721bff;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#contact .contact-form-btn:hover {
+    background: #4979c7;
+}
+
+.icons {
+    text-align: center;
+    
+}
+
+.collapse button.login_btn{
+    border-radius: 45%;
+    background-color: rgb(70, 149, 223);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.collapse button.login_btn:hover {
+    background-color:   #fff;
+  }
+
+.icons a{
+    font-size: 28px;
+    padding: 0 10px;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+.icons a:hover {
+    color: #721bff;
+}
+
+footer img {
+    height: 2.5rem;
+    margin: 1.5rem 0;
+    transition: 0.5s; 
+}
+
+footer img:hover {
+    color: #721bff;
+}
+
+hr.socket {
+    width: 100%;
+    border-top: .2rem solid #a57334;
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-body .fa-suitcase {
+        height: 160px;
+        width: 140px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .container {
+        width: 100%;
+    }
+
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

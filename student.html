@@ -1,0 +1,142 @@
+<html>
+      <head>
+            <title>regestration</title>
+      </head>
+      <body>
+	  <img src="home.jpg" height="50" width="50" align="right" onclick="openWin()">
+		<h4 align="center">        STUDENT REGISTRATION </h4>
+		
+		<br>
+	<form action="stureg.php" method="POST">
+		<table align="center"  cellpadding="10">
+			<tr>
+				<td>First Name</td>
+				<td><input type="text"  name="txtfname"required></td>
+				<td></td><td></td><td></td>
+
+				<td>Qualification</td>
+				<td>
+	<select name="txtquali">
+	<option value="">--Select--</option>
+	<option value="SSLC">SSLC</option>
+	<option value="Plus TwO">Plus TwO</option>
+	<option value="U.G">U.G</option>
+	<option value="P.G">P.G</option>
+	
+	</select>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text"  name="txtlname"required></td>
+				<td></td><td></td><td></td>
+				
+			<td>Course</td>
+	<td>
+	<select name="txtcour">
+	<option value="">--Select--</option>
+	<option value="BCA">PHP</option>
+	<option value="B.Com">JAVA</option>
+	
+	</select>
+
+				
+			</tr>
+			<tr>
+	<td>Gender</td>
+	<td>
+	<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="Female">Female
+	
+	</td>
+	
+			
+				<td></td><td></td><td></td>
+
+				<td>Phone Number</td>
+				<td><input type="text"  name="txtpone"required></td>
+			</tr>
+			<tr>
+				<td>House Name</td>
+				<td><input type="text"  name="txthou"required></td>
+				<td></td><td></td><td></td>
+
+				<td>Email</td>
+				<td><input type="text"  name="txtemail"required></td>
+			</tr>
+			
+			<tr>
+				<td>Location</td>
+				<td><input type="text"  name="txtloc"required></td>
+				<td></td><td></td><td></td>
+
+				<td>User Name</td>
+				<td><input type="text"  name="txtuname"required></td>
+			</tr>
+			
+			<tr>
+				<td>City</td>
+				<td><input type="text"  name="txtcity"required></td>
+				<td></td><td></td><td></td>
+
+				<td>Password</td>
+				<td><input type="password"  name="txtpassi"  id="txtPassword"  required></td>
+			</tr>
+			
+			<tr>
+			<td>State</td>
+	<td>
+	<select name="txtstate">
+	<option value="">--Select--</option>
+	<option value="Kerala">Kerala</option>
+	<option value="Delhi">Delhi</option>
+	<option value="Orissa">Orissa</option>
+	<option value="Assam">Assam</option>
+	
+	</select>
+				
+				<td></td><td></td><td></td>
+
+				<td>Confirm Password</td>
+				<td><input type="password"  name="txtpass"  id="txtconPassword"  required></td>
+			</tr>
+			
+			
+			<tr>
+			<td>Date of Birth</td>
+				<td><input type="date"  name="txtbirth"required></td>
+				
+				<td></td><td></td><td></td>
+				<td>Franchise Id</td>
+	<td>
+	<select name="txtid">
+	<option value="">--Select--</option>
+	<option value="Kerala">1100</option>
+	<option value="Delhi">1101</option>
+	<option value="Orissa">1102</option>
+	<option value="Assam">1103</option>
+	
+	</select>
+				
+		
+			</tr>
+			
+		</table>
+			<br>
+
+		<center><input type="submit" name="submit" value="SUBMIT" id="submit" onclick="return Validate()"> </center>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtconPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+	</form>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+      <head>
+            <title>subject</title>
+<script>
+function openWin() {
+    window.open("fadmin.html","_parent");
+}
+
+</script>
+
+      </head>
+      <body>
+<br>
+
+<img src=""  align="right" onclick="openWin()">
+     
+		<h2 align="center"> NEW SUBJECT REGISTRATION </h2>
+		
+	<form action="subjectreg.php" method="POST" >
+		<table align="center"  cellpadding="10">
+			<tr>
+				<td>Subject Name</td>
+				<td><input type="text"  name="txtsub"  required></td>
+			</tr>
+			<tr>
+				<td>Semester</td>
+				<td><select name="txts">
+					<option value="">--Select--</option>
+					<option value="Semester 1">Semester 1</option>
+					<option value="Semester 2">Semester 2</option>
+					<option value="Semester 3">Semester 3</option>
+					<option value="Semester 4">Semester 4</option>
+					<option value="Semester 5">Semester 5</option>
+					<option value="Semester 6">Semester 6</option>
+					
+					
+					</select></td>
+				
+			</tr>
+			<tr>
+				<td>Course</td>
+				<td><input type="text" name="txtc" required></td>
+			</tr>
+			
+
+		</table>
+			<br>
+
+		<center><input type="submit" name="Submit" value="SUBMIT"> </center>
+	
+
+
+	</form>
+    
+    </body>
+</html>
